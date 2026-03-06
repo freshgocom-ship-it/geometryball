@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>XML Table Viewer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="menu.js"></script>
+<script src="pause.js"></script>
+<script src="skins.js"></script>
+<script src="table.js"></script>
+
+</head>
+
+<body>
+
+<div id="menu">
+<h1>Table Viewer</h1>
+<button onclick="startApp()">Start</button>
+<button onclick="togglePause()">Pause</button>
+</div>
+
+<div id="content" style="display:none">
+
+<table id="dataTable" border="1">
+<thead>
+<tr>
+<th>Min SDK</th>
+<th>Target SDK</th>
+<th>Main Activity</th>
+<th>Package</th>
+<th>Version</th>
+</tr>
+</thead>
+
+<tbody id="tableBody">
+</tbody>
+
+</table>
+
+</div>
+
+</body>
+</html>
